@@ -143,8 +143,8 @@ html_theme_options = {
     'github_repo': 'poliastro',
     'show_relbars': 'true',
     'show_powered_by': 'false',
-    # 'page_width': '90%',
-    # 'fixed_sidebar': 'true',
+    'page_width': '90%',
+    'fixed_sidebar': 'true',
 }
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = [alabaster.get_path()]
