@@ -154,7 +154,6 @@ html_theme_options = {
     'show_relbars': 'true',
     'show_powered_by': 'false',
     'page_width': '90%',
-    'sidebar_width' : '25%',
     'fixed_sidebar': 'true',
     'github_banner': 'true',
     'extra_nav_links' : { 'Benchmarks': 'https://blog.poliastro.space/poliastro-benchmarks/',
