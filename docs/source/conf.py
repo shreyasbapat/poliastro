@@ -130,7 +130,6 @@ else:
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-# import sphinx_rtd_theme
 import alabaster
 html_theme = 'alabaster'
 
@@ -138,7 +137,15 @@ html_theme = 'alabaster'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
-
+html_theme_options = {
+    'logo': 'logo_text.png',
+    'github_user': 'poliastro',
+    'github_repo': 'poliastro',
+    'show_relbars': 'true',
+    'show_powered_by': 'false',
+    'page_width': '90%',
+    'fixed_sidebar': 'true',
+}
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = [alabaster.get_path()]
 
