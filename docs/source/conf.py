@@ -137,6 +137,16 @@ html_theme = 'alabaster'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
+html_sidebars = {
+    '**': [
+        'about.html',
+        'navigation.html',
+        'relations.html',
+        'searchbox.html',
+        # 'donate.html',
+    ]
+}
+
 html_theme_options = {
     'logo': 'logo_text.png',
     'github_user': 'poliastro',
@@ -144,7 +154,10 @@ html_theme_options = {
     'show_relbars': 'true',
     'show_powered_by': 'false',
     'page_width': '90%',
+    'sidebar_width' : '25%',
     'fixed_sidebar': 'true',
+    'github_banner': 'true',
+    'extra_nav_links' : 'https://blog.poliastro.space/poliastro-benchmarks/',
 }
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = [alabaster.get_path()]
