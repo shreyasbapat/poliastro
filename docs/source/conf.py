@@ -157,7 +157,10 @@ html_theme_options = {
     'sidebar_width' : '25%',
     'fixed_sidebar': 'true',
     'github_banner': 'true',
-    'extra_nav_links' : 'https://blog.poliastro.space/poliastro-benchmarks/',
+    'extra_nav_links' : { 'Benchmarks': 'https://blog.poliastro.space/poliastro-benchmarks/',
+                          'Blog': 'https://blog.poliastro.space/',
+                        },
+
 }
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = [alabaster.get_path()]
