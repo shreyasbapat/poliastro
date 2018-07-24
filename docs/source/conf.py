@@ -152,6 +152,7 @@ html_theme_options = {
     'github_user': 'poliastro',
     'github_repo': 'poliastro',
     'show_relbars': 'true',
+    'sidebar_collapse': 'true',
     'show_powered_by': 'false',
     'page_width': '90%',
     'fixed_sidebar': 'true',
