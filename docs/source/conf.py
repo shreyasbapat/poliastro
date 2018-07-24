@@ -148,8 +148,10 @@ html_sidebars = {
 }
 
 html_theme_options = {
-    'logo': 'logo_text.png',
+    'logo': 'logo_trans.png',
     'logo_name': 'true',
+    'logo_text_align': 'center',
+    'body_text_align': 'center',
     'github_user': 'poliastro',
     'github_repo': 'poliastro',
     'show_relbars': 'true',
