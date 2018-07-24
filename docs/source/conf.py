@@ -149,12 +149,13 @@ html_sidebars = {
 
 html_theme_options = {
     'logo': 'logo_text.png',
+    'logo_name': 'true',
     'github_user': 'poliastro',
     'github_repo': 'poliastro',
     'show_relbars': 'true',
     'show_powered_by': 'false',
-    'page_width': '90%',
-    'fixed_sidebar': 'false',
+    'page_width': '80%',
+    'fixed_sidebar': 'true',
     'github_banner': 'true',
     'extra_nav_links' : { 'Benchmarks': 'https://blog.poliastro.space/poliastro-benchmarks/',
                           'Blog': 'https://blog.poliastro.space/',
