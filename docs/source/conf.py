@@ -15,7 +15,7 @@
 
 import sys
 import os
-
+from datetime import datetime
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -24,7 +24,7 @@ import os
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
-needs_sphinx = '1.3'
+# needs_sphinx = '1.3'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -59,8 +59,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'poliastro'
-copyright = u'2013-2018, Juan Luis Cano Rodríguez and the poliastro development team'
-
+year = datetime.now().year
+copyright = "2013 - %d,  Juan Luis Cano Rodríguez and the poliastro development team" % year
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
@@ -153,16 +153,17 @@ html_favicon = 'favicon.ico'
 
 html_theme_options = {
     'logo': 'logo_trans.png',
-    'logo_name': 'true',
+    'logo_name': True,
     'logo_text_align': 'center',
+    'travis_button' : True,
     'description':'Astrodynamics in Python',
     'body_text_align': 'left',
     'github_user': 'poliastro',
     'github_repo': 'poliastro',
-    'show_relbars': 'true',
-    'show_powered_by': 'false',
+    'show_relbars': True,
+    'show_powered_by': False,
     'page_width': '80%',
-    'github_banner': 'true',
+    'github_banner': True,
     'extra_nav_links' : { 'Benchmarks': 'https://blog.poliastro.space/poliastro-benchmarks/',
                           'Blog': 'https://blog.poliastro.space/',
                         },
@@ -241,7 +242,7 @@ html_theme_options = {
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'poliastrodoc'
+# htmlhelp_basename = 'poliastrodoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -260,10 +261,10 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-  ('index', 'poliastro.tex', 'poliastro Documentation',
-   'Juan Luis Cano Rodríguez', 'manual'),
-]
+# latex_documents = [
+  # ('index', 'poliastro.tex', 'poliastro Documentation',
+   # 'Juan Luis Cano Rodríguez', 'manual'),
+# ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
@@ -290,10 +291,10 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [
-    ('index', 'poliastro', 'poliastro Documentation',
-     ['Juan Luis Cano Rodríguez'], 1)
-]
+# man_pages = [
+    # ('index', 'poliastro', 'poliastro Documentation',
+     # ['Juan Luis Cano Rodríguez'], 1)
+# ]
 
 # If true, show URL addresses after external links.
 #man_show_urls = False
@@ -304,11 +305,11 @@ man_pages = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
-texinfo_documents = [
-  ('index', 'poliastro', 'poliastro Documentation',
-   'Juan Luis Cano Rodríguez', 'poliastro', 'One line description of project.',
-   'Miscellaneous'),
-]
+# texinfo_documents = [
+#   ('index', 'poliastro', 'poliastro Documentation',
+#    'Juan Luis Cano Rodríguez', 'poliastro', 'One line description of project.',
+#    'Miscellaneous'),
+# ]
 
 # Documents to append as an appendix to all manuals.
 #texinfo_appendices = []
