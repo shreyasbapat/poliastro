@@ -1,6 +1,10 @@
 poliastro - Astrodynamics in Python
 ===================================
 
+.. image:: _static/logo_text.png
+   :width: 100%
+   :align: center
+
 **poliastro** is an open source (MIT) collection of Python functions useful
 in Astrodynamics and Orbital Mechanics, focusing on interplanetary applications.
 It provides a simple and intuitive API and handles physical quantities with
@@ -27,6 +31,11 @@ and `chat`_.
 
 .. include:: form.rst
 
+.. figure:: _static/molniya.png
+   :align: right
+   :figwidth: 50%
+   :alt: Molniya orbit
+
    Plot of a `Molniya orbit`_ around the Earth
    (\\(a = 26600\\,\\mathrm{km}, e = 0.75,
    i = 63.4 \\mathrm{{}^{\\circ}} \\)).
@@ -46,9 +55,6 @@ poliastro works on recent versions of Python and is released under
 the MIT license, hence allowing commercial use of the library.
 
 .. code-block:: python
-
-    import matplotlib.pyplot as plt
-    plt.ion()
 
     from poliastro.examples import molniya
     from poliastro.plotting import plot

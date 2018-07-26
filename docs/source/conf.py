@@ -59,7 +59,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'poliastro'
-copyright = u'2013-2017, Juan Luis Cano Rodríguez and the poliastro development team'
+copyright = u'2013-2018, Juan Luis Cano Rodríguez and the poliastro development team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -161,7 +161,7 @@ html_theme_options = {
     'github_repo': 'poliastro',
     'show_relbars': 'true',
     'show_powered_by': 'false',
-    'page_width': '1024px',
+    'page_width': '80%',
     'github_banner': 'true',
     'extra_nav_links' : { 'Benchmarks': 'https://blog.poliastro.space/poliastro-benchmarks/',
                           'Blog': 'https://blog.poliastro.space/',
