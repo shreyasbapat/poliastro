@@ -131,7 +131,8 @@ else:
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 import alabaster
-html_theme = 'alabaster'
+html_theme_path = [alabaster.get_path()]
+extensions = ["alabaster", "sphinx.ext.intersphinx"]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -151,21 +152,20 @@ html_theme_options = {
     'logo': 'logo_trans.png',
     'logo_name': 'true',
     'logo_text_align': 'center',
-    'body_text_align': 'center',
+    'description':'Astrodynamics in Python',
+    # 'body_text_align': 'center',
     'github_user': 'poliastro',
     'github_repo': 'poliastro',
-    'show_relbars': 'true',
-    'show_powered_by': 'false',
-    'page_width': '80%',
-    'fixed_sidebar': 'true',
-    'github_banner': 'true',
-    'extra_nav_links' : { 'Benchmarks': 'https://blog.poliastro.space/poliastro-benchmarks/',
-                          'Blog': 'https://blog.poliastro.space/',
-                        },
+    # 'show_relbars': 'true',
+    # 'show_powered_by': 'false',
+    # 'page_width': '1024px',
+    # 'github_banner': 'true',
+    # 'extra_nav_links' : { 'Benchmarks': 'https://blog.poliastro.space/poliastro-benchmarks/',
+                          # 'Blog': 'https://blog.poliastro.space/',
+                        # },
 
 }
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = [alabaster.get_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -189,7 +189,7 @@ html_theme_path = [alabaster.get_path()]
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
