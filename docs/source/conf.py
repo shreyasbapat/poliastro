@@ -149,7 +149,7 @@ extensions = ["alabaster", "sphinx.ext.intersphinx"]
 #         # 'donate.html',
 #     ]
 # }
-
+html_favicon = 'favicon.ico'
 
 html_theme_options = {
     'logo': 'logo_trans.png',

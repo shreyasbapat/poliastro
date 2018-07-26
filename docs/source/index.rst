@@ -2,7 +2,7 @@ poliastro - Astrodynamics in Python
 ===================================
 
 .. image:: _static/logo_text.png
-   :width: 675px
+   :width: 50%
    :align: center
 
 **poliastro** is an open source (MIT) collection of Python functions useful
@@ -61,7 +61,7 @@ the MIT license, hence allowing commercial use of the library.
 
     from poliastro.examples import molniya
     from poliastro.plotting import plot
-    
+
     plot(molniya)
 
 .. include:: success.rst
