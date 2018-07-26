@@ -54,7 +54,7 @@ templates_path = ['_templates']
 source_suffix = '.rst'
 
 #Warning suppresses
-suppress_warnings = ['image.nonlocal_uri']
+# suppress_warnings = ['image.nonlocal_uri']
 
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
@@ -149,7 +149,7 @@ else:
 #html_title = None
 
 # HTML style
-html_style = os.path.join("css", "custom.css")
+# html_style = os.path.join("css", "custom.css")
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
