@@ -40,6 +40,27 @@ extensions = [
     'nbsphinx',
     'IPython.sphinxext.ipython_console_highlighting',
 ]
+
+html_favicon = 'favicon.ico'
+
+html_theme_options = {
+    'logo': 'logo_trans.png',
+    'logo_name': True,
+    'logo_text_align': 'center',
+    'travis_button' : True,
+    'description':'Astrodynamics in Python',
+    'body_text_align': 'left',
+    'github_user': 'poliastro',
+    'github_repo': 'poliastro',
+    'show_relbars': True,
+    'show_powered_by': False,
+    'page_width': '80%',
+    'github_banner': True,
+    'extra_nav_links' : { 'Benchmarks': 'https://blog.poliastro.space/poliastro-benchmarks/',
+                          'Blog': 'https://blog.poliastro.space/',
+                        },
+
+}
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
