@@ -29,6 +29,7 @@ needs_sphinx = '1.3'
 
 import alabaster
 html_theme = "alabaster"
+html_static_path = ['_static']
 html_theme_path = [alabaster.get_path()]
 extensions = [
     'alabaster',
@@ -187,7 +188,7 @@ html_style = os.path.join("css", "custom.css")
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
