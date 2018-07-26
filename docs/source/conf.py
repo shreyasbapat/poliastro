@@ -131,6 +131,7 @@ else:
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 import alabaster
+html_theme = 'alabaster'
 html_theme_path = [alabaster.get_path()]
 extensions = ["alabaster", "sphinx.ext.intersphinx"]
 
