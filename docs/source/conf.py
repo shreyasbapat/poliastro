@@ -156,7 +156,7 @@ html_theme_options = {
     'logo_name': 'true',
     'logo_text_align': 'center',
     'description':'Astrodynamics in Python',
-    # 'body_text_align': 'center',
+    'body_text_align': 'left',
     'github_user': 'poliastro',
     'github_repo': 'poliastro',
     'show_relbars': 'true',
@@ -164,8 +164,8 @@ html_theme_options = {
     'page_width': '1024px',
     'github_banner': 'true',
     'extra_nav_links' : { 'Benchmarks': 'https://blog.poliastro.space/poliastro-benchmarks/',
-                          # 'Blog': 'https://blog.poliastro.space/',
-                        # },
+                          'Blog': 'https://blog.poliastro.space/',
+                        },
 
 }
 # Add any paths that contain custom themes here, relative to this directory.
