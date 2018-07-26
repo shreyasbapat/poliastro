@@ -45,7 +45,7 @@ extensions = [
 # ones.
 
 # Custom configuration
-autodoc_member_order = 'bysource'
+# autodoc_member_order = 'bysource'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -149,7 +149,7 @@ else:
 #html_title = None
 
 # HTML style
-# html_style = os.path.join("css", "custom.css")
+html_style = os.path.join("css", "custom.css")
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
