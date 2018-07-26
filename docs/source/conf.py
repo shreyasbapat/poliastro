@@ -65,7 +65,7 @@ master_doc = 'index'
 # General information about the project.
 project = 'poliastro'
 year = datetime.now().year
-copyright = u'2013-%d, Juan Luis Cano Rodríguez and the poliastro development team', year
+copyright = u'2013-%d, Juan Luis Cano Rodríguez and the poliastro development team' % year
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
