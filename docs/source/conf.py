@@ -16,21 +16,11 @@
 import sys
 import os
 from datetime import datetime
-
+import alabaster
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
-
-# -- General configuration ------------------------------------------------
-
-# If your documentation needs a minimal Sphinx version, state it here.
-needs_sphinx = '1.3'
-
-import alabaster
-html_theme = "alabaster"
-html_static_path = ['_static']
-html_theme_path = [alabaster.get_path()]
 extensions = [
     'alabaster',
     'sphinx.ext.autodoc',
@@ -42,32 +32,18 @@ extensions = [
     'IPython.sphinxext.ipython_console_highlighting',
 ]
 
-html_favicon = 'favicon.ico'
+# -- General configuration ------------------------------------------------
 
-html_theme_options = {
-    'logo': 'logo_trans.png',
-    'logo_name': True,
-    'logo_text_align': 'center',
-    'travis_button' : True,
-    'description':'Astrodynamics in Python',
-    'body_text_align': 'left',
-    'github_user': 'poliastro',
-    'github_repo': 'poliastro',
-    'show_relbars': True,
-    'show_powered_by': False,
-    'page_width': '80%',
-    'github_banner': True,
-    'extra_nav_links' : { 'Benchmarks': 'https://blog.poliastro.space/poliastro-benchmarks/',
-                          'Blog': 'https://blog.poliastro.space/',
-                        },
+# If your documentation needs a minimal Sphinx version, state it here.
+needs_sphinx = '1.3'
 
-}
+
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 
 # Custom configuration
-# autodoc_member_order = 'bysource'
+autodoc_member_order = 'bysource'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -76,7 +52,7 @@ templates_path = ['_templates']
 source_suffix = '.rst'
 
 #Warning suppresses
-# suppress_warnings = ['image.nonlocal_uri']
+suppress_warnings = ['image.nonlocal_uri']
 
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
@@ -163,7 +139,39 @@ else:
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
+html_theme = "alabaster"
+html_static_path = ['_static']
+html_theme_path = [alabaster.get_path()]
 
+html_favicon = 'favicon.ico'
+html_sidebars = {
+    '**': [
+        'about.html',
+        'navigation.html',
+        'relations.html',
+        'searchbox.html',
+        # 'donate.html',
+    ]
+}
+
+html_theme_options = {
+    'logo': 'logo_trans.png',
+    'logo_name': True,
+    'logo_text_align': 'center',
+    'travis_button' : True,
+    'description':'Astrodynamics in Python',
+    'body_text_align': 'left',
+    'github_user': 'poliastro',
+    'github_repo': 'poliastro',
+    'show_relbars': True,
+    'show_powered_by': False,
+    'page_width': '80%',
+    'github_banner': True,
+    'extra_nav_links' : { 'Benchmarks': 'https://blog.poliastro.space/poliastro-benchmarks/',
+                          'Blog': 'https://blog.poliastro.space/',
+                        },
+
+}
 # Add any paths that contain custom themes here, relative to this directory.
 
 # The name for this set of Sphinx documents.  If None, it defaults to
@@ -171,10 +179,10 @@ else:
 #html_title = None
 
 # HTML style
-html_style = os.path.join("css", "custom.css")
+# html_style = os.path.join("css", "custom.css")
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-#html_short_title = None
+html_short_title = 'poliastro'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
