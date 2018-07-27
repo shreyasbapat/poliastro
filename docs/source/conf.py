@@ -155,7 +155,7 @@ html_sidebars = {
 }
 
 html_theme_options = {
-    'logo': 'logo_trans.png',
+    'logo': 'logo_text.png',
     'logo_name': True,
     'logo_text_align': 'center',
     'travis_button' : True,
@@ -163,10 +163,8 @@ html_theme_options = {
     'body_text_align': 'left',
     'github_user': 'poliastro',
     'github_repo': 'poliastro',
-    'show_relbars': True,
     'show_powered_by': False,
-    'page_width': '80%',
-    'github_banner': True,
+    # 'github_banner': True,
     'extra_nav_links' : { 'Benchmarks': 'https://blog.poliastro.space/poliastro-benchmarks/',
                           'Blog': 'https://blog.poliastro.space/',
                         },
