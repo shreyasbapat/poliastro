@@ -2,7 +2,7 @@ poliastro - Astrodynamics in Python
 ===================================
 
 .. image:: _static/logo_text.png
-   :width: 100%
+   :width: 90%
    :align: center
 
 **poliastro** is an open source (MIT) collection of Python functions useful

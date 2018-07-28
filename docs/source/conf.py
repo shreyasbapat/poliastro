@@ -16,6 +16,7 @@
 import sys
 import os
 from datetime import datetime
+import alabaster
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -30,6 +31,7 @@ from datetime import datetime
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'alabaster',
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
     'sphinx.ext.todo',
@@ -130,10 +132,8 @@ else:
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-import alabaster
 html_theme = 'alabaster'
 html_theme_path = [alabaster.get_path()]
-extensions = ["alabaster", "sphinx.ext.intersphinx"]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -176,7 +176,7 @@ html_theme_options = {
 #html_title = None
 
 # HTML style
-# html_style = os.path.join("css", "custom.css")
+html_style = os.path.join("css", "custom.css")
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
