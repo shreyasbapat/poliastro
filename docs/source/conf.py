@@ -21,7 +21,12 @@ import alabaster
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
-
+html_static_path = ["_static"]
+html_context = {
+    'css_files': [
+        '_static/custom.css',  # overrides for wide tables in RTD theme
+        ],
+    }
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -156,7 +161,6 @@ html_theme_options = {
     'logo_name': True,
     'logo_text_align': 'center',
     'travis_button' : True,
-    'codecov_button' : True,
     'description':'Astrodynamics in Python',
     'body_text_align': 'left',
     'github_user': 'poliastro',
@@ -177,7 +181,7 @@ html_theme_options = {
 #html_title = None
 
 # HTML style
-html_style = os.path.join("css", "custom.css")
+# html_style = os.path.join("css", "custom.css")
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -199,7 +203,7 @@ html_style = os.path.join("css", "custom.css")
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
-#html_extra_path = []
+# html_extra_path = []
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
