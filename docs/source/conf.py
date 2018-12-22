@@ -37,6 +37,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'nbsphinx',
     'IPython.sphinxext.ipython_console_highlighting',
+    'sphinx_gallery.gen_gallery',
 ]
 
 # Custom configuration
@@ -213,7 +214,12 @@ html_static_path = ['_static']
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'poliastrodoc'
-
+sphinx_gallery_conf = {
+     # path to your examples scripts
+     'examples_dirs': 'examples',
+     # path where to save gallery generated examples
+     'gallery_dirs': 'auto_examples',
+}
 
 # -- Options for LaTeX output ---------------------------------------------
 
