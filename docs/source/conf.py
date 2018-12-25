@@ -14,7 +14,6 @@
 # serve to show the default.
 
 import sys
-import pathlib
 import os
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -215,26 +214,13 @@ html_static_path = ['_static']
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'poliastrodoc'
-path = os.getcwd()
-example_dir = os.path.join(path,'examples')
-print(example_dir)
 sphinx_gallery_conf = {
-    'examples_dirs': example_dir,
-    'backreferences_dir':os.path.join(path, 'generated', 'modules'),  # path to store the module using example template
-    'filename_pattern': '^((?!skip_).)*$',  # execute all examples except those that start with "skip_"
-    'gallery_dirs': os.path.join(path, 'generated', 'gallery'),  # path to save gallery generated examples
-    # 'default_thumb_file': path.joinpath('logo', 'sunpy_icon_128x128.png'),
-    'reference_url': {
-        'sunpy': None,
-        'astropy': 'http://docs.astropy.org/en/stable/',
-        'matplotlib': 'https://matplotlib.org/',
-        'numpy': 'http://docs.scipy.org/doc/numpy/',
-        'image_scrapers': ('matplotlib',),
-    },
-    'abort_on_example_error': True,
-    'plot_gallery': True
-    }
-
+     # path to your examples scripts
+     'examples_dirs': 'examples',
+     # path where to save gallery generated examples
+     'gallery_dirs': 'auto_examples',
+     'image_scrapers': ('matplotlib',),
+}
 
 # -- Options for LaTeX output ---------------------------------------------
 

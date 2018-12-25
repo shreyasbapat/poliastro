@@ -93,7 +93,7 @@ Contents
    references
    api
    changelog
-   generated/gallery/index
+   auto_examples/index
 
 .. note::
     Older versions of poliastro relied on some Fortran subroutines written by David A. Vallado for
