@@ -71,7 +71,7 @@ the MIT license, hence allowing commercial use of the library.
 
     from poliastro.examples import molniya
     from poliastro.plotting import plot
-    
+
     plot(molniya)
 
 .. include:: success.rst
@@ -93,7 +93,7 @@ Contents
    references
    api
    changelog
-   auto_examples/index
+   generated/gallery/index
 
 .. note::
     Older versions of poliastro relied on some Fortran subroutines written by David A. Vallado for
